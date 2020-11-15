@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:kriyaflutter/model/product.dart';
 
-class CheckoutPage extends StatelessWidget {
+class CheckoutPage extends StatefulWidget {
+
+
+
+  @override
+  _CheckoutPageState createState() => _CheckoutPageState();
+}
+
+class _CheckoutPageState extends State<CheckoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,8 +19,6 @@ class CheckoutPage extends StatelessWidget {
         ),
         title: Text("Checkout"),
         centerTitle: true,
-      ),
-      body: StreamBuilder(
       ),
     );
   }

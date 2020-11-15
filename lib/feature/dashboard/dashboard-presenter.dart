@@ -39,7 +39,8 @@ Future<List<Product>> fetchProduct(http.Client client) async {
 
 List<Product> parseProduct(String responseBody) {
   final parsed = jsonDecode(responseBody).cast<Map<String, dynamic>>();
-
+  List<Product> daftarProduct = parsed.map<Product>((json) => Product.fromJson(json)).toList();
+  print("Ini daftar product= ${daftarProduct[0].qty}");
   return parsed.map<Product>((json) => Product.fromJson(json)).toList();
 }
 

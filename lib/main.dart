@@ -2,6 +2,8 @@ import 'package:easy_alert/easy_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:kriyaflutter/feature/dashboard/dashboard-page.dart';
 
+import 'feature/launch/launch-page.dart';
+
 void main() {
 
   runApp(
@@ -23,13 +25,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         primaryColor: Colors.white,
       ),
-      home: DashboardPage(),
-      // home: LaunchPage(),
+//      home: DashboardPage(),
+       home: LaunchPage(),
       routes: <String, WidgetBuilder>{
-        'main': (context) => DashboardPage(),
-        // 'main': (context) => LaunchPage(),
-        'launcher': (context) => new DashboardPage(),
-        // 'launcher': (context) => new LaunchPage(),
+//        'main': (context) => DashboardPage(),
+         'main': (context) => LaunchPage(),
+//        'launcher': (context) => new DashboardPage(),
+         'launcher': (context) => new LaunchPage(),
       },
     );
   }

@@ -1,7 +1,7 @@
 class Product {
 // final int userId;
 // final int id;
- final int qty;
+ int qty;
  final String title;
 // final bool completed;
 
@@ -11,7 +11,7 @@ class Product {
     return Product(
 
         title : json['title'] as String,
-        qty : json['qty'] as int,
+        qty : 0
     );
   }
 
